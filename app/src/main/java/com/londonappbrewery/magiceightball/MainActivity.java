@@ -15,14 +15,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button clickButton = (Button) findViewById(R.id.button_roll);
-        final ImageView randomImage = (ImageView) findViewById(R.id.image_main);
+        Button clickButton = (Button) findViewById(R.id.button_ask);
+        final ImageView randomImage = (ImageView) findViewById(R.id.image_8ball);
 
-        final int[] imageArray = {R.drawable.ball1,
-                                  R.drawable.ball2,
-                                  R.drawable.ball3,
-                                  R.drawable.ball4,
-                                  R.drawable.ball5 };
+        final int[] imageArray = new int[] {
+                R.drawable.ball1,
+                R.drawable.ball2,
+                R.drawable.ball3,
+                R.drawable.ball4,
+                R.drawable.ball5
+        };
+
         clickButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
